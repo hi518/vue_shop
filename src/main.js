@@ -7,6 +7,8 @@ import './plugins/element.js'
 import './assets/css/global.css'
 // 导入层叠样式表
 import './assets/fonts/iconfont.css'
+// 导入运行依赖树形表格
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 // 配置请求的根路径
@@ -22,6 +24,8 @@ Vue.prototype.$http = axios
 
 
 Vue.config.productionTip = false
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
